@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 452px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.card-img {
+    border-radius: 20px 20px 0 0;
+}
+
+.card-bottom- content {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.card-bottom-content p {
+    width: 80%;
+}
+
+.annual-tile {
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.annual-tile-left {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.text-content p {
+    color: hsl(223, 47%, 23%);
+    font-weight: 600;
+}
+
+.btn-pay {
+    padding: 12px;
+    width: 90%;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 10px;
+    color: hsl(225, 100%, 98%);
+}
+
+.cancel a {
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+    font-weight: 600;
+}
+
+.attribution {
+    margin: 20px 0;
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .card {
+        width: 90vh;
+        margin: 0;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+}
